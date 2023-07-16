@@ -23,12 +23,9 @@ def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
                 text="❤‍🔥sᴇᴛᴛɪɴɢs❤‍🔥", callback_data="settings_helper"
             ),
         ],
-        [
-            InlineKeyboardButton(
-                text="💖 ғᴇᴇʟɪɴɢs 💖", url=f"https://t.me/LOVE_FEELINGS_WILL_121"),
-            InlineKeyboardButton(
-                text="🥰 ᴍʏ ʟɪғᴇʟɪɴᴇ[❣️] 🥰", url=f"https://t.me/aarohi_ki_duniya"
-            ),
+        
+            
+           
         ],
         [
             InlineKeyboardButton(
@@ -54,13 +51,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
                 text="🥺ʜᴇʟᴩ🥺", callback_data="settings_back_helper"
             ),
         ],
-        [
-            InlineKeyboardButton(
-                text="💖 ғᴇᴇʟɪɴɢs 💖", url=f"https://t.me/LOVE_FEELINGS_WILL_121"),
-            InlineKeyboardButton(
-                text="🥰 ᴍʏ ʟɪғᴇʟɪɴᴇ[❣️] 🥰", url=f"https://t.me/aarohi_ki_duniya"
-            ),
-        ],
+        
         [
             InlineKeyboardButton(text="💝ᴍᴀɪɴᴛᴀɪɴᴇʀ[ᴅɪʟ]💝", user_id=OWNER),
             InlineKeyboardButton(
@@ -71,6 +62,11 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             InlineKeyboardButton(
                     text="🥺 ᴏᴡɴᴇʀ 🥺", url=config.UPSTREAM_REPO
                 )
+        ],
+    [
+            InlineKeyboardButton(
+                text="✨ sᴏᴜʀᴄᴇ ✨", callback_data="lund_lele"
+            )
         ],
      ]
     return buttons
